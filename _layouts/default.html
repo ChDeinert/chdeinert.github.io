@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="with-hero">
+        <section class="hero">
+            <div class="wrapper">
+                <header>
+                    <p class="hero-left">Hi! I'm</p>
+                    <h1>Christian Deinert</h1>
+                    <p class="hero-right">Web-Developer from <a href="https://www.google.de/maps/place/Singen+(Hohentwiel)/@47.7568506,8.7973657,12z/data=!3m1!4b1!4m2!3m1!1s0x479a7d33fa8afe9f:0xa3f9f94099cb2cef" target="_blank"><i class="fa fa-map-marker"></i> Singen Htwl.</a></p>
+                </header>
+            </div>
+        </section>
+
+        {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

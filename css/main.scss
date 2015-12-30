@@ -1,0 +1,51 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Variables
+$background-color: #FFFFFF;
+$base-header-color: #757575;
+$base-text-color: #BDBDBD;
+$base-link-color: #FFCC80;
+$base-link-hover: #FF9800;
+$base-border-color: #EEEEEE;
+
+$header-link-color: #CFD8DC;
+$header-link-hover-color: #607D8B;
+$hero-text-color: $header-link-color;
+
+$highlight-color: #FF9800;
+
+$background-color-footer: $header-link-color;
+$background-link-color: #B0BEC5;
+$background-link-hover: $header-link-hover-color;
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+$on-palm:          600px;
+$on-laptop:        800px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+body, * {
+    padding: 0;
+    margin: 0;
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "bourbon/bourbon",
+    "base/base",
+    "layout",
+    "style"
+;
