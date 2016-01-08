@@ -15,7 +15,7 @@ work-history:
 - {time-from: '02.2006', time-to: '09.2006', job: 'Civilian service', company: 'Pestalozzi Kinder- und Jugenddorf Wahlwies', description: 'Assistance of leisure education'}
 
 education:
-- {time-from: '09.2010', time-to: 'Now', school: 'Wilhelm Büchner Hochschule', degree: 'B.Sc. Applied computer science', description: 'with specialization on business informatics'}
+- {time-from: '09.2010', time-to: '01.2016', school: 'Wilhelm Büchner Hochschule', degree: 'B.Sc. Applied computer science', description: 'with specialization on business informatics'}
 - {time-from: '09.2006', time-to: '06.2009', school: 'KHS Donaueschingen, IHK Schwarzwald-Baar', degree: 'Apprenticeship as Information technology officer', description: ''}
 - {time-from: '2002', time-to: '2005', school: 'Hohentwiel Gewerbeschule Singen', degree: 'Abitur', description: ''}
 
