@@ -10,16 +10,17 @@ skills:
 - {icon: 'icon-csharp', name: 'C#', level: 1, description: 'Got the basics'}
 
 work-history:
-- {time-from: '06.2009', time-to: '12.2015', job: 'Information technology officer', company: 'MCQ TECH GmbH', description: '<ul><li>Development, maintenance and mordanization of the Intranet and its applications</li><li>Database development and maintenance</li><li>Administration of the VMWare Environment</li></ul>'}
+- {time-from: '06.2009', time-to: '12.2015', job: 'Information technology officer', company: 'MCQ TECH GmbH', description: '<ul><li>Development, maintenance and modernization of the Intranet and its applications</li><li>Database development and maintenance</li><li>Administration of the VMWare Environment</li></ul>'}
 - {time-from: '09.2006', time-to: '06.2009', job: 'Apprenticeship as Information technology officer', company: 'MCQ TECH GmbH', description: ''}
 - {time-from: '02.2006', time-to: '09.2006', job: 'Civilian service', company: 'Pestalozzi Kinder- und Jugenddorf Wahlwies', description: 'Assistance of leisure education'}
 
 education:
-- {time-from: '09.2010', time-to: '01.2016', school: 'Wilhelm Büchner Hochschule', degree: 'B.Sc. Applied computer science', description: 'with specialization on business informatics'}
+- {time-from: '09.2010', time-to: '01.2016', school: 'Wilhelm Büchner Hochschule', degree: 'B.Sc. Applied Computer Sciences', description: 'with specialization on business informatics'}
 - {time-from: '09.2006', time-to: '06.2009', school: 'KHS Donaueschingen, IHK Schwarzwald-Baar', degree: 'Apprenticeship as Information technology officer', description: ''}
 - {time-from: '2002', time-to: '2005', school: 'Hohentwiel Gewerbeschule Singen', degree: 'Abitur', description: ''}
 
 certificates:
+- {date: '21.01.2016', type: 'Honor Code Certificate', title: 'HTML5.2x: Advanced Techniques for Designing HTML5 Apps', organisation: 'edX W3Cx'}
 - {date: '21.07.2015', type: 'Honor Code Certificate', title: 'HTML5.1x: Web Design Fundamentals (Part 1)', organisation: 'edX W3Cx'}
 - {date: '18.05.2015', type: 'Honor Code Certificate', title: 'DEV201x: Introduction in TypeScript', organisation: 'edX Microsoft'}
 - {date: '20.11.2013', type: 'Honor Code Certificate', title: 'CS169.1x: Software as a Service', organisation: 'edX Berkeley'}
