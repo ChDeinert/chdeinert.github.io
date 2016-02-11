@@ -21,6 +21,6 @@ education:
 
 certificates:
 - {date: '21.01.2016', type: 'Honor Code Certificate', title: 'HTML5.2x: Advanced Techniques for Designing HTML5 Apps', organisation: 'edX W3Cx'}
-- {date: '21.07.2015', type: 'Honor Code Certificate', title: 'HTML5.1x: Web Design Fundamentals (Part 1)', organisation: 'edX W3Cx'}
+- {date: '27.07.2015', type: 'Honor Code Certificate', title: 'HTML5.1x: Web Design Fundamentals (Part 1)', organisation: 'edX W3Cx'}
 - {date: '18.05.2015', type: 'Honor Code Certificate', title: 'DEV201x: Introduction in TypeScript', organisation: 'edX Microsoft'}
 - {date: '20.11.2013', type: 'Honor Code Certificate', title: 'CS169.1x: Software as a Service', organisation: 'edX Berkeley'}
