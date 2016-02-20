@@ -1,0 +1,50 @@
+---
+layout: page
+---
+
+<section class="content project-overview">
+    <div class="back-button"><a href="/projects"><i class="fa fa-arrow-left"></i> <span>back to Projects</span></a></div>
+    <header>
+        <h1>Translator <a href="http://github.com/ChDeinert/Translator" target="_blank"><i class="fa fa-external-link"></i></a></h1>
+    </header>
+
+    <div>
+        <h2>About the Project</h2>
+        <div class="overview-informations">
+            <p>This Project was created while I was working for MCQ TECH GmbH <a href="http://metz-connect.com" target="_blank"><i class="fa fa-external-link"></i></a>. Being international it was necessary to internationalise their intranet and its applications.</p>
+            <p>
+                Since Zikula uses gettext for internationalisation and the only ways to translate a page to different languages were:
+                <ul class="list">
+                    <li>Writing a translation catalogue and translate it by hand and then compile it with a tool like Poedit.</li>
+                    <li>Generate the transation catalogue, translate and compile it with a tool like Poedit.</li>
+                    <li>Use the Zikula Gettext Module, which generates the translation catalogue for you after you zipped your module and uploaded it. To translate and compile it, a tool like Poedit is needed.</li>
+                </ul>
+                But writing a translation catalogue by hand is too error prone and setting up an external tool to find every gettext occurrence can be quite time consuming.
+                Using the Zikula Gettext Module seems like a bad idea, since you have to first zip your module and upload it to get a translation catalogue.
+            </p>
+            <p>
+                The idea to this module was to make the use of external tools obsolete by giving the developer a tool at hand that makes it possible to generate the translation catalogue, translate it and finally compile it.
+                To make this possible it searches for gettext-functions in the selected module and saves them for translation.
+                After translation the translation catalogue can be exported and gets compiled with help of the PHP package php.mo <a href="https://github.com/phpmo/php.mo"><i class="fa fa-external-link"></i></a>.
+            </p>
+            <p class="urgent">
+                Since much of the development of this project was done during my work for MCQ TECH, the further development is currently on a halt.
+                I started some major changes on the module, that are still unfinished because other projects with higher priority blocked the development.
+                Until I find the muse and the time to build a working test-environment and work on it.
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Technology Stack</h2>
+
+        <ul class="technology-stack">
+            <li><img src="/assets/projects/zikula.png" alt="Zikula Application Framework icon"><div>Zikula</div></li>
+            <li><i class="icon-php" title="PHP"></i><div>PHP 5.4.x</div></li>
+            <li><i class="icon-html"></i><div>Smarty templates</div></li>
+            <li><i class="icon-css"></i><div>CSS</div></li>
+            <li><i class="icon-javascript"></i><div>Prototype.js</div></li>
+            <li><i class="fa fa-cogs"></i><div>php.mo</div></li>
+        </ul>
+    </div>
+</section>

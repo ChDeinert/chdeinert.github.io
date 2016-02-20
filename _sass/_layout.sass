@@ -277,3 +277,65 @@ div.timeline-entry
             color: $header-link-color
             li
                 list-style: disc
+
+.project-area
+    +display(flex)
+    +justify-content(center)
+    +flex-direction(column)
+    +flex-wrap(no-wrap)
+    margin-bottom: 30px
+    .project
+        width: 100%
+        min-width: 210px
+        +padding(10px 30px)
+        +margin(10px 0 0 0)
+        border: 1px solid $base-border-color
+        +border-top-radius(3px)
+        +border-bottom-radius(3px)
+
+.project-overview
+    div
+        text-align: left
+    h2
+        margin: 30px auto 10px
+
+.technology-stack
+    +display(flex)
+    +justify-content(space-between)
+    +flex-direction(row)
+    +flex-wrap(wrap)
+    +media(510px)
+        +justify-content(center)
+    li
+        +display(flex)
+        +justify-content(center)
+        +align-items(center)
+        +flex-direction(row)
+        +flex-wrap(no-wrap)
+        width: 45%
+        min-height: 60px
+        +media(510px)
+            width: 150px
+        +padding(3px 10px)
+        +margin(3px 3px 0 0)
+        border: 1px solid $base-border-color
+        +border-top-radius(3px)
+        +border-bottom-radius(3px)
+        &:last-child
+            +margin(3px 0 0 0)
+        div
+            +padding(0 6px)
+        img
+            max-width: 30px
+            max-height: 30px
+            height: 30px
+            height: +padding(3px)
+
+.back-button
+    +position(absolute)
+    a
+        +transition(color 0.3s ease-in-out)
+        span
+            opacity: 0
+            filter: alpha(opacity=0)
+            +transition(opacity 0.3s ease-in-out 0.3s)

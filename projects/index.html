@@ -1,0 +1,35 @@
+---
+layout: page
+---
+
+<section class="content projects">
+    <header>
+        <h1>Projects</h1>
+    </header>
+    <div>
+        <div class="project-area">
+            {% for project in site.data.projects.projects %}
+                <div class="project">
+                    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+                    <div class="project-description">{{ project.description }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="content projects">
+    <header>
+        <h1>Legacy Projects</h1>
+    </header>
+    <div>
+        <div class="project-area">
+            {% for project in site.data.projects.legacy-projects %}
+                <div class="project">
+                    <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
+                    <div class="project-description">{{ project.description }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -17,4 +17,5 @@ markdown: kramdown
 # Site areas
 links:
 - {title: 'Resume', url: '/resume.html'}
+- {title: 'Projects', url: '/projects/'}
 - {title: 'Imprint', url: '/imprint.html'}

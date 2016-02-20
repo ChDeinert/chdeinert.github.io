@@ -49,9 +49,31 @@ header.site-header
 .skill-tooltip
     font-size: .8em
 
+.project-overview
+    h1
+        a
+            font-size: 1rem
+
+.technology-stack
+    i
+        font-size: 30px
+    div
+        color: $base-link-color
+
 .site-footer
     background-color: $background-color-footer
     a
         color: $background-link-color
         &:hover
             color: $background-link-hover
+
+.back-button
+    a
+        &:hover
+            span
+                opacity: 1
+                filter: alpha(opacity=1)
+
+ul.list
+    list-style: disc
+    +padding(0 0 0 21px)

@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+<section class="content project-overview">
+    <div class="back-button"><a href="/projects"><i class="fa fa-arrow-left"></i> <span>back to Projects</span></a></div>
+    <header>
+        <h1>LDAPAuth <a href="https://github.com/ChDeinert/LDAPAuth" target="_blank"><i class="fa fa-external-link"></i></a></h1>
+    </header>
+
+    <div>
+        <h2>About the Project</h2>
+        <div class="overview-informations">
+            <p>This Project was created while I was working for MCQ TECH GmbH <a href="http://metz-connect.com" target="_blank"><i class="fa fa-external-link"></i></a>. With a potential of hundrets of users accessing the Intranet applications, that are already registered in Active Directory, a way to Authenticate these users against the AD was needed.</p>
+            <p>Since there was no module for the Zikula Application Framework 1.3.x that enabled only the Authentication with LDAP, this one was created. It allows users - that have an account on the AD - to log in without the need of a registration. Administrators can also import multiple users and groups into Zikula and update the imported informations about multiple users.</p>
+            <p>Another feature is the possibility to automatically update the informations in Zikula Profile module.</p>
+            <p>The connection to the Active Directory happens with the help of the PHP Package adLDAP <a href="https://github.com/adldap/adLDAP"><i class="fa fa-external-link"></i></a>. If the connection to the Active Directory fails for some reason, users that successfully logged in at least once, are still able to since the login informations are also saved in the standard Zikula account.</p>
+            <p class="urgent">Since much of the development of this project was done during my work for MCQ TECH, the further development is currently on a halt. Until I find the muse and the time to build a working test-environment and work on it.</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Technology Stack</h2>
+        <ul class="technology-stack">
+            <li><img src="/assets/projects/zikula.png" alt="Zikula Application Framework icon"><div>Zikula</div></li>
+            <li><i class="icon-php" title="PHP"></i><div>PHP 5.4.x</div></li>
+            <li><i class="fa fa-cogs"></i><div>adLDAP</div></li>
+            <li><i class="icon-html"></i><div>Smarty templates</div></li>
+            <li><i class="icon-javascript"></i><div>Prototype.js</div></li>
+            <li><i class="icon-css"></i><div>CSS</div></li>
+        </ul>
+    </div>
+</section>
