@@ -1,13 +1,13 @@
 # Site settings
 title: Christian Deinert
 email: ChDeinert@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  I'm a Web-Developer based in Singen(Hohentwiel) - Germany,
+description: >
+  I'm a Web- & Software Developer based in Singen(Hohentwiel) - Germany,
   focusing on PHP Backend development,
   but I'm not afraid to get my hands dirty in the Front-End!
 timezone: Europe/Berlin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.ChDeinert.de" # the base hostname & protocol for your site
+url: "http://ChDeinert.github.io" # the base hostname & protocol for your site
 twitter_username: ChDeinert
 github_username:  ChDeinert
 
