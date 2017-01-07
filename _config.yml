@@ -17,3 +17,6 @@ markdown: kramdown
 links:
 - {title: 'Resume', url: '/resume.html'}
 - {title: 'Imprint', url: '/imprint.html'}
+
+gems:
+- jemoji
