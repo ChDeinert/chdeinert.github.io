@@ -1,11 +1,11 @@
 skills:
 - {icon: 'icon-php', name: 'PHP', level: 5, description: 'Experienced'}
 - {icon: 'icon-mysql', name: 'MySQL', level: 5, description: 'Experienced'}
+- {icon: 'fa fa-github', name: 'GitHub', level: 4, description: 'Gaining XP'}
+- {icon: 'icon-javascript', name: 'JavaScript', level: 4, description: 'Gaining XP'}
 - {icon: 'fa fa-html5', name: 'HTML5', level: 3, description: 'Got it'}
-- {icon: 'icon-javascript', name: 'JavaScript', level: 3, description: 'Got used to it'}
-- {icon: 'fa fa-github', name: 'GitHub', level: 3, description: 'Got it'}
+- {icon: 'fa fa-css3', name: 'CSS', level: 3, description: 'Got it'}
 - {icon: 'icon-ruby', name: 'Ruby', level: 2, description: 'Getting there'}
-- {icon: 'fa fa-css3', name: 'CSS', level: 2, description: 'Getting there'}
 - {icon: 'icon-python', name: 'Python', level: 1, description: 'Got the basics'}
 - {icon: 'icon-csharp', name: 'C#', level: 1, description: 'Got the basics'}
 
