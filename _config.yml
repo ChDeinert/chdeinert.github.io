@@ -15,8 +15,11 @@ markdown: kramdown
 
 # Site areas
 links:
-- {title: 'Resume', url: '/resume.html'}
-- {title: 'Imprint', url: '/imprint.html'}
+- {title: 'Resume', url: '/resume'}
+- {title: 'Imprint', url: '/imprint'}
 
 gems:
 - jemoji
+
+# Google Services
+google_analytics: UA-89954996-1
