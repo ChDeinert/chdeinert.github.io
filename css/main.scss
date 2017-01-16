@@ -5,20 +5,20 @@
 
 // Variables
 $background-color: #FFFFFF;
-$base-header-color: #757575;
-$base-text-color: #BDBDBD;
+$base-header-color: #808080;
+$base-text-color: #424242;
 $base-link-color: #FFCC80;
 $base-link-hover: #FF9800;
 $base-border-color: #EEEEEE;
 
-$header-link-color: #CFD8DC;
-$header-link-hover-color: #607D8B;
-$hero-text-color: $header-link-color;
+$header-link-color: #607D8B;
+$header-link-hover-color: #455A64;
+$hero-text-color: #B0BEC5;
 
 $highlight-color: #FF9800;
 
-$background-color-footer: $header-link-color;
-$background-link-color: #B0BEC5;
+$background-color-footer: $hero-text-color;
+$background-link-color: $header-link-color;
 $background-link-hover: $header-link-hover-color;
 
 // Using media queries with like this:
