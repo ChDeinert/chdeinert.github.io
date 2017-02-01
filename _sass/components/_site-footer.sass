@@ -1,0 +1,22 @@
+.site-footer
+    border-color: $gray
+    background-color: $gray-lightest
+    background-image: linear-gradient(to bottom, $gray-lighter 0%, $gray-lightest 5%)
+    color: $grayblue
+    &-content-wrapper
+        +display(flex)
+        +flex-direction(row)
+        +justify-content(center)
+        text-align: center
+        width: 100%
+    &-item
+        +display(inline-block)
+        +padding(0 30px)
+    &-contact
+        &-item
+            +display(inline-block)
+    &-link
+        color: $grayblue-lighter
+        font-weight: 600
+        &:hover
+            color: $grayblue-darkest

@@ -1,19 +1,29 @@
 <footer class="site-footer">
-    <div class="footer-wrapper">
-        <div class="footer-contact">
-            <h2>Contact</h2>
+    <div class="site-footer-content-wrapper">
+        <div class="site-footer-item site-footer-contact">
             <ul>
-                <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-                <li><a href="http://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter-square fa-3x"></i></a></li>
-                <li><a href="http://github.com/{{ site.github_username}}"><i class="fa fa-github-square fa-3x"></i></a></li>
+                <li class="site-footer-contact-item">
+                    <a href="mailto:{{ site.email }}" class="site-footer-link">
+                        <i class="fa fa-envelope-square fa-2x"></i>
+                    </a>
+                </li>
+                <li class="site-footer-contact-item">
+                    <a href="http://twitter.com/{{ site.twitter_username }}" class="site-footer-link">
+                        <i class="fa fa-twitter-square fa-2x"></i>
+                    </a>
+                </li>
+                <li class="site-footer-contact-item">
+                    <a href="http://github.com/{{ site.github_username}}" class="site-footer-link">
+                        <i class="fa fa-github-square fa-2x"></i>
+                    </a>
+                </li>
             </ul>
         </div>
-        <div class="footer-copyright">
-            <p><i class="fa fa-copyright"></i> 2015-2016 Christian Deinert</p>
-            <p>Created with <a href="http://jekyllrb.com">Jekyll</a> &amp; Hosted by <a href="http://github.com">Github</a></p>
-        </div>
+            <div class="site-footer-item"><i class="fa fa-copyright"></i> 2015-{{ site.time | date: '%Y' }} Christian Deinert</div>
+            <div class="site-footer-item">Created with <a href="http://jekyllrb.com" class="site-footer-link">Jekyll</a> &amp; Hosted by <a href="http://github.com" class="site-footer-link">Github</a></div>
     </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
     $(document).ready(function() {
