@@ -3,39 +3,65 @@
 ---
 @charset "utf-8";
 
-// Variables
-$background-color: #FFFFFF;
-$base-header-color: #808080;
-$base-text-color: #424242;
-$base-link-color: #FFCC80;
-$base-link-hover: #FF9800;
-$base-border-color: #EEEEEE;
+// Color-Variables
+$light-gray: #DDDDDD;
+$dark-gray: #333333;
 
-$header-link-color: #607D8B;
-$header-link-hover-color: #455A64;
-$hero-text-color: #B0BEC5;
+$gray-lightest: #E5E4E4;
+$gray-lighter: #B4B3B3;
+$gray: #888888;
+$gray-darker: #585858;
+$gray-darkest: #181818;
 
-$highlight-color: #FF9800;
+$grayblue-lightest: #6A7A83;
+$grayblue-lighter: #4D5F68;
+$grayblue: #36464f;
+$grayblue-darker: #1F3038;
+$grayblue-darkest: #132732;
 
-$background-color-footer: $hero-text-color;
-$background-link-color: $header-link-color;
-$background-link-hover: $header-link-hover-color;
+$orange-lightest: #FFC164;
+$orange-lighter: #FFB039;
+$orange: #FF9800;
+$orange-darker: #C67600;
+$orange-darkest: #9B5D00;
 
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-$on-palm:          600px;
-$on-laptop:        800px;
+/// A variable that outputs a system font stack.
+///
+/// @link https://goo.gl/LHRZIf
+///
+/// @type list
+///
+/// @example scss
+///   .element {
+///     font-family: $font-stack-system;
+///   }
+///
+///   // CSS Output
+///   .element {
+///     font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+///   }
 
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+$font-stack-system: (
+  -apple-system,
+  BlinkMacSystemFont,
+  "Avenir Next",
+  "Avenir",
+  "Segoe UI",
+  "Lucida Grande",
+  "Helvetica Neue",
+  "Helvetica",
+  "Fira Sans",
+  "Roboto",
+  "Noto",
+  "Droid Sans",
+  "Cantarell",
+  "Oxygen",
+  "Ubuntu",
+  "Franklin Gothic Medium",
+  "Century Gothic",
+  "Liberation Sans",
+  sans-serif,
+);
 
 body, * {
     padding: 0;
@@ -46,6 +72,9 @@ body, * {
 @import
     "bourbon/bourbon",
     "base/base",
+    "neat/neat",
     "layout",
-    "style"
+    "style",
+    "components/site-header",
+    "components/hero"
 ;
