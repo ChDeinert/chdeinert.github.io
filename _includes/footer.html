@@ -19,11 +19,11 @@
     $(document).ready(function() {
         $('#menuicon').click(
             function() {
-                if ($('#menuicon').hasClass('menu-open')) {
-                    $('#menuicon').removeClass('menu-open');
+                if ($('#menuicon').hasClass('site-header-menu-open')) {
+                    $('#menuicon').removeClass('site-header-menu-open');
                     $('#menulist').slideUp(300);
                 } else {
-                    $('#menuicon').addClass('menu-open');
+                    $('#menuicon').addClass('site-header-menu-open');
                     $('#menulist').slideDown(300);
                 }
             }

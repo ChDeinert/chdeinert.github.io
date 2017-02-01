@@ -1,15 +1,17 @@
 <header class="site-header">
     <nav>
-        <div class="logo">ChDeinert</div>
-        <ul id="menulist">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <div class="site-header-logo">ChDeinert</div>
+        <ul class="site-header-menulist" id="menulist">
+            <li class="site-header-menuitem"><a href="{{ site.baseurl }}/">Home</a></li>
             {% for page in site.links %}
               {% if page.title %}
-                  <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  <li class="site-header-menuitem">
+                      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                  </li>
               {% endif %}
             {% endfor %}
         </ul>
-        <div class="menuicon" id="menuicon">
+        <div class="site-header-menuicon" id="menuicon">
             <span></span>
         </div>
     </nav>
