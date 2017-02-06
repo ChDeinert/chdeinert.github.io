@@ -14,38 +14,41 @@ permalink: /
     </div>
 </section>
 
-<section class="content">
-    <header>
-        <h1>About</h1>
-    </header>
-    <div>
-        <p>I used to focus on Backend Development with PHP, but now I'm also getting my hands dirty in the Front-End! Sometimes I also try myself on designing.</p>
-        <p>Also I'm playing Handball, PC Games, I like to go mountain biking, am an amateur photographer and a fan of sciency things.</p>
+<section class="content-section">
+    <div class="content-wrapper">
+        <header>
+            <h1>About</h1>
+        </header>
+        <div>
+            <p>I used to focus on Backend Development with PHP, but now I'm also getting my hands dirty in the Front-End! Sometimes I also try myself on designing.</p>
+            <p>Also I'm playing Handball, PC Games, I like to go mountain biking, am an amateur photographer and a fan of sciency things.</p>
+        </div>
     </div>
 </section>
 
-<section class="content">
-    <header><h1>What I can work with</h1></header>
-
-    <div>
-        <div class="skill-area">
-            {% for skill in site.data.informations.skills %}
+<section class="content-section content-section-grayblue">
+    <div class="content-wrapper">
+        <header><h1>What I can work with</h1></header>
+        <div>
+            <div class="skill-area">
+                {% for skill in site.data.informations.skills %}
                 <div class="skill">
                     <span class="skill-icon"><i class="{{ skill.icon }}" title="{{ skill.name }}"></i></span>
                     <span class="skill-level">
                         {% for i in (1..5) %}
-                            {% if i <= skill.level %}
-                                <i class="fa fa-circle"></i>
-                            {% else %}
-                                <i class="fa fa-circle-thin"></i>
-                            {% endif %}
+                        {% if i <= skill.level %}
+                        <i class="fa fa-circle"></i>
+                        {% else %}
+                        <i class="fa fa-circle-thin"></i>
+                        {% endif %}
                         {% endfor %}
                         <span class="skill-tooltip">{{ skill.description }}</span>
                     </span>
                 </div>
-            {% endfor %}
-        </div>
+                {% endfor %}
+            </div>
 
-        <p>And I love to learn new things and to improve myself!</p>
+            <p>And I love to learn new things and to improve myself!</p>
+        </div>
     </div>
 </section>

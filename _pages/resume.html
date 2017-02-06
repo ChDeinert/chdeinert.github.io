@@ -3,13 +3,14 @@ layout: page
 permalink: /resume
 ---
 
-<section class="content resume">
-    <header>
-        <h1>Working Experience</h1>
-    </header>
-    <div>
-        <ul class="timeline">
-            {% for job in site.data.informations.work-history %}
+<section class="content-section">
+    <div class="content-wrapper">
+        <header>
+            <h1>Working Experience</h1>
+        </header>
+        <div>
+            <ul class="timeline">
+                {% for job in site.data.informations.work-history %}
                 <li class="timeline-entry">
                     <div class="timeline-entry-icon"></div>
                     <div class="timeline-entry">
@@ -17,22 +18,24 @@ permalink: /resume
                         <h2>{{ job.company }}</h2>
                         <p class="timeline-entry-details">{{ job.job }}</p>
                         {% if job.description != '' %}
-                            <div class="timeline-entry-info">{{ job.description }}</div>
+                        <div class="timeline-entry-info">{{ job.description }}</div>
                         {% endif %}
                     </div>
                 </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>
 
-<section class="content resume">
-    <header>
-        <h1>Education</h1>
-    </header>
-    <div>
-        <ul class="timeline">
-            {% for degree in site.data.informations.education %}
+<section class="content-section content-section-orange">
+    <div class="content-wrapper">
+        <header>
+            <h1>Education</h1>
+        </header>
+        <div>
+            <ul class="timeline">
+                {% for degree in site.data.informations.education %}
                 <li class="timeline-entry">
                     <div class="timeline-entry-icon"></div>
                     <div class="timeline-entry">
@@ -40,22 +43,24 @@ permalink: /resume
                         <h2>{{ degree.school }}</h2>
                         <p class="timeline-entry-details">{{ degree.degree }}</p>
                         {% if degree.description != '' %}
-                            <div class="timeline-entry-info">{{ degree.description }}</div>
+                        <div class="timeline-entry-info">{{ degree.description }}</div>
                         {% endif %}
                     </div>
                 </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>
 
-<section class="content resume">
-    <header>
-        <h1>Certificates</h1>
-    </header>
-    <div>
-        <ul class="timeline">
-            {% for cert in site.data.informations.certificates %}
+<section class="content-section content-section-grayblue">
+    <div class="content-wrapper">
+        <header>
+            <h1>Certificates</h1>
+        </header>
+        <div>
+            <ul class="timeline">
+                {% for cert in site.data.informations.certificates %}
                 <li class="timeline-entry">
                     <div class="timeline-entry-icon"></div>
                     <div class="timeline-entry">
@@ -65,7 +70,8 @@ permalink: /resume
                         <p class="timeline-entry-info">{{ cert.organisation }}</p>
                     </div>
                 </li>
-            {% endfor %}
-        </ul>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </section>

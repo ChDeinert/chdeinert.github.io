@@ -13,20 +13,19 @@ main
     min-height: 80vh
 
 .content
-    +media(700px)
-        margin: 0 auto 90px
-    +media(510px)
-        text-align: center
-    margin: 0 auto 30px
-    padding: 30px 30px 60px
-    max-width: 600px
-    text-align: left
-    h1
-        margin: 30px
-        text-align: center
+    &-section
+        +margin(0)
+        +padding(0)
+    &-wrapper
+        +margin(0 auto)
+        +padding(120px 30px)
+        max-width: 720px
+        text-align: left
+        +media($medium-screen)
+            text-align: center
 
 .site-footer
-    +margin(30px 0 0 0)
+    +margin(0)
     +padding(30px)
     border-top: 1px solid
 
