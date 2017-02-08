@@ -13,12 +13,12 @@ permalink: /resume
                 {% for job in site.data.informations.work-history %}
                 <li class="timeline-entry">
                     <div class="timeline-entry-icon"></div>
-                    <div class="timeline-entry">
-                        <p class="timeline-entry-time">{{ job.time-from }} - {{ job.time-to }}</p>
+                    <div class="timeline-entry-content">
+                        <p class="timeline-entry-content-time">{{ job.time-from }} - {{ job.time-to }}</p>
                         <h2>{{ job.company }}</h2>
-                        <p class="timeline-entry-details">{{ job.job }}</p>
+                        <p class="timeline-entry-content-details">{{ job.job }}</p>
                         {% if job.description != '' %}
-                        <div class="timeline-entry-info">{{ job.description }}</div>
+                        <div class="timeline-entry-content-info">{{ job.description }}</div>
                         {% endif %}
                     </div>
                 </li>
@@ -38,12 +38,12 @@ permalink: /resume
                 {% for degree in site.data.informations.education %}
                 <li class="timeline-entry">
                     <div class="timeline-entry-icon"></div>
-                    <div class="timeline-entry">
-                        <p class="timeline-entry-time">{{ degree.time-from }} - {{ degree.time-to }}</p>
+                    <div class="timeline-entry-content">
+                        <p class="timeline-entry-content-time">{{ degree.time-from }} - {{ degree.time-to }}</p>
                         <h2>{{ degree.school }}</h2>
-                        <p class="timeline-entry-details">{{ degree.degree }}</p>
+                        <p class="timeline-entry-content-details">{{ degree.degree }}</p>
                         {% if degree.description != '' %}
-                        <div class="timeline-entry-info">{{ degree.description }}</div>
+                        <div class="timeline-entry-content-info">{{ degree.description }}</div>
                         {% endif %}
                     </div>
                 </li>
@@ -63,11 +63,11 @@ permalink: /resume
                 {% for cert in site.data.informations.certificates %}
                 <li class="timeline-entry">
                     <div class="timeline-entry-icon"></div>
-                    <div class="timeline-entry">
-                        <p class="timeline-entry-time">{{ cert.date }}</p>
+                    <div class="timeline-entry-content">
+                        <p class="timeline-entry-content-time">{{ cert.date }}</p>
                         <h2>{{ cert.type }}</h2>
-                        <p class="timeline-entry-details">{{ cert.title }}</p>
-                        <p class="timeline-entry-info">{{ cert.organisation }}</p>
+                        <p class="timeline-entry-content-details">{{ cert.title }}</p>
+                        <p class="timeline-entry-content-info">{{ cert.organisation }}</p>
                     </div>
                 </li>
                 {% endfor %}
