@@ -28,27 +28,27 @@ permalink: /
 
 <section class="content-section content-section-grayblue">
     <div class="content-wrapper">
-        <header><h1>What I can work with</h1></header>
-        <div>
-            <div class="skill-area">
-                {% for skill in site.data.informations.skills %}
-                <div class="skill">
-                    <span class="skill-icon"><i class="{{ skill.icon }}" title="{{ skill.name }}"></i></span>
-                    <span class="skill-level">
-                        {% for i in (1..5) %}
-                        {% if i <= skill.level %}
-                        <i class="fa fa-circle"></i>
-                        {% else %}
-                        <i class="fa fa-circle-thin"></i>
-                        {% endif %}
-                        {% endfor %}
-                        <span class="skill-tooltip">{{ skill.description }}</span>
-                    </span>
-                </div>
-                {% endfor %}
+        <header>
+            <h1>What I can work with</h1>
+        </header>
+        <div class="skill-wrapper">
+            {% for skill in site.data.informations.skills %}
+            <div class="skill">
+                <span class="skill-icon"><i class="{{ skill.icon }}" title="{{ skill.name }}"></i></span>
+                <span class="skill-level">
+                    {% for i in (1..5) %}
+                    {% if i <= skill.level %}
+                    <i class="fa fa-circle"></i>
+                    {% else %}
+                    <i class="fa fa-circle-thin"></i>
+                    {% endif %}
+                    {% endfor %}
+                    <span class="skill-tooltip">{{ skill.description }}</span>
+                </span>
             </div>
-
-            <p>And I love to learn new things and to improve myself!</p>
+            {% endfor %}
         </div>
+
+        <p>And I love to learn new things and to improve myself!</p>
     </div>
 </section>
