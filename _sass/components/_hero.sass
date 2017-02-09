@@ -19,6 +19,16 @@
         background-image: linear-gradient(to bottom, transparentize($grayblue-lighter, .25) 0%, transparentize($grayblue-darkest, .25) 100%)
     &-content
         margin: auto
+        &-header
+            +padding(10px 30px)
+            text-align: center
+            border:
+                top: 3px solid $grayblue-lightest
+                bottom: 3px solid $grayblue-lightest
+        &-top
+            text-align: left
+        &-bottom
+            text-align: right
     &-link
         color: $light-gray
         &-icon
