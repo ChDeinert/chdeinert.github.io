@@ -12,7 +12,8 @@ permalink: /blog/
                         <a href="{{ post.url | prepend: site.baseurl }}" class="blog-index-item-header">{{ post.title }}</a>
                     </h2>
                     <div class="blog-index-item-meta">
-                        <i class="fa fa-calendar"></i><time class="blog-index-item-meta-time">{{ post.date | date_to_long_string }}</time>
+                        <i class="fa fa-calendar"></i>
+                        <time class="blog-index-item-meta-time">{{ post.date | date_to_long_string }}</time>
                     </div>
                     <div class="blog-index-item-excerpt">
                         {{ post.excerpt }}
