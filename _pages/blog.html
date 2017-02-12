@@ -1,0 +1,25 @@
+---
+layout: default
+permalink: /blog/
+---
+
+<section class="content-section">
+    <div class="content-wrapper content-wrapper-blog-index">
+        {% for post in site.posts %}
+            <div class="blog-index-item-wrapper">
+                <div class="blog-index-item">
+                    <h2>
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="blog-index-item-header">{{ post.title }}</a>
+                    </h2>
+                    <div class="blog-index-item-meta">
+                        <i class="fa fa-calendar"></i><time class="blog-index-item-meta-time">{{ post.date | date_to_long_string }}</time>
+                    </div>
+                    <div class="blog-index-item-excerpt">
+                        {{ post.excerpt }}
+                    </div>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="button">Read more <i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
