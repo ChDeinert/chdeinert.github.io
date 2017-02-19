@@ -1,6 +1,0 @@
-projects:
-- {name: 'phpPoHelper', url: '/projects/phpPoHelper', description: 'A PHP Package to ease the work with Gettext Po Files.'}
-- {name: 'Translator', url: '/projects/translator.html', description: 'A Zikula Application Framework Module Providing a Web-based way to translate Zikula-modules'}
-
-legacy-projects:
-- {name: 'LDAPAuth', url: '/projects/ldapauth.html', description: 'A LDAP-Authentication Module for the Zikula Application Framework using adLDAP'}
