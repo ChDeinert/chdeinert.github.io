@@ -1,0 +1,53 @@
+.hero
+    color: $light-gray
+    height: 80vh
+    border-bottom: 1px solid $grayblue-darker
+    &-bg
+        z-index: 0
+        width: 100%
+        height: 100%
+        filter: grayscale(1)
+        background: url(/assets/images/small-matthew-smith.jpg) no-repeat top center
+        background-size: cover
+        +media($medium-screen)
+            background: url(/assets/images/medium-matthew-smith.jpg) no-repeat top center
+            background-size: cover
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+        +media($large-screen)
+            background: url(/assets/images/large-matthew-smith.jpg) no-repeat top center
+            background-size: cover
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+        +media(1920px)
+            background: url(/assets/images/full-matthew-smith.jpg) no-repeat top center
+            background-size: cover
+            -webkit-background-size: cover
+            -moz-background-size: cover
+            -o-background-size: cover
+    &-content-wrapper
+        z-index: 1
+        width: 100%
+        height: inherit
+        position: absolute
+        +display(flex)
+        +align-items(center)
+        background-image: linear-gradient(to bottom, transparentize($grayblue-lighter, .25) 0%, transparentize($grayblue-darkest, .25) 100%)
+    &-content
+        margin: auto
+        &-header
+            +padding(10px 30px)
+            text-align: center
+            border:
+                top: 3px solid $grayblue-lightest
+                bottom: 3px solid $grayblue-lightest
+        &-top
+            text-align: left
+        &-bottom
+            text-align: right
+    &-link
+        color: $light-gray
+        &-icon
+            color: $orange

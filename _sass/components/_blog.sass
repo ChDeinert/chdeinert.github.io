@@ -1,0 +1,52 @@
+.content-wrapper-blog
+    &-index
+        +padding(60px 0)
+        width: 100%
+        max-width: 100%
+    &-post
+        +padding(60px 30px 120px)
+        text-align: left
+
+.blog-index-item
+    +padding(30px)
+    +margin(0 auto)
+    width: 100%
+    max-width: 720px
+    text-align: left
+    border-bottom: 1px solid $gray-lightest
+    &-wrapper
+        width: 100%
+    &-header
+        color: $grayblue
+        &:hover
+            color: $grayblue-darker
+    &-meta
+        +margin(-.75rem 0 1rem)
+        font-size: .75rem
+        color: $gray
+        &-time
+            +padding(0 .5rem 0)
+    &-excerpt
+        +margin(0 0 1.5rem)
+
+.blog-post
+    &-title
+        +margin(0 0 .75em)
+        font-size: 2.5rem
+        border-bottom: 1px solid $gray-lightest
+    &-meta
+        +margin(-1.75rem 0 1.75rem)
+        color: $gray
+    &-content
+        font-size: 1.2rem
+        h1, h2, h3, h4, h5, h6
+            +margin(2.5rem 0 1.5rem)
+        h2
+            font-size: 2rem
+        h3
+            font-size: 1.5rem
+        h4, h5, h6
+            font-size: 1em
+    &-footer
+        margin-top: 30px
+        position: absolute

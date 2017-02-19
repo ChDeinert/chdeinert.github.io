@@ -13,13 +13,22 @@ github_username:  ChDeinert
 # Build settings
 markdown: kramdown
 
+include:
+- _pages
+
+# Gems
+gems:
+- jemoji
+
 # Site areas
 links:
 - {title: 'Resume', url: '/resume'}
 - {title: 'Imprint', url: '/imprint'}
 
-gems:
-- jemoji
+# Blog
+excerpt_separator: '---'
+defaults:
+- {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
 
 # Google Services
 google_analytics: UA-89954996-1

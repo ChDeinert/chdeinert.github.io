@@ -1,82 +1,42 @@
-body
-    background-color: $background-color
-
-header.site-header
-    nav
-        background-color: $background-color
-        .logo
-            font-family: 'Righteous', cursive
-            color: $base-header-color
-            img
-                +border-top-radius(6px)
-                +border-bottom-radius(6px)
-        a
-            color: $header-link-color
-            font-weight: 600
-            +transition(color 0.3s ease-in-out)
-            &:hover
-                color: $header-link-hover-color
-
-
-.hero
-    color: $hero-text-color
-    header
-        p
-            font-size: 1.2em
-        a
-            color: $hero-text-color
-            i
-                color: $base-link-color
-                +transition(color 0.3s ease-in-out)
-            &:hover
-                i
-                    color: $base-link-hover
-        h1
-            font-size: 2em
-            color: $base-header-color
-
-.content
-    h1
-        font-size: 1.5em
-    .urgent
-        color: $highlight-color
-        font-weight: 600
-
-.skill-level
-    color: $base-link-color
-    +transition(color 0.3s ease-in-out, margin-top 0.3s ease-in-out 0.3s)
+a
+    color: $orange-lighter
+    +transition(color 0.3s ease-in-out)
     &:hover
-        color: $base-link-hover
-.skill-tooltip
-    font-size: .8em
-.skill-icon
-    color: $base-header-color
+        color: $orange
 
-.project-overview
-    h1
-        a
-            font-size: 1rem
+.button
+    +padding(6px 9px)
+    border: 1px solid $orange-lighter
+    border-radius: 3px
+    &:hover
+        border-color: $orange
 
-.technology-stack
-    i
-        font-size: 30px
-    div
-        color: $base-link-color
+hr
+    border-color: $gray-lightest
 
-.site-footer
-    background-color: $background-color-footer
-    a
-        color: $background-link-color
-        &:hover
-            color: $background-link-hover
+.highlight
+    margin: 0 0 12px
+    border-radius: 3px
+    background-color: #49483e
+    border: 1px solid $gray-darker
+    color: $light-gray
 
-.back-button
-    a
-        &:hover
-            span
-                opacity: 1
-                filter: alpha(opacity=1)
-
-ul.list
-    list-style: disc
-    +padding(0 0 0 21px)
+.highlighter-rouge
+    pre
+        padding: 12px
+        overflow: auto
+        font-size: 1rem
+        line-height: 1.45
+    code
+        display: inline
+        max-width: initial
+        padding: 0
+        margin: 0
+        overflow: initial
+        line-height: inherit
+        word-wrap: normal
+        background-color: transparent
+        border: 0
+        &:before,
+        &:after
+            content: none

@@ -1,0 +1,44 @@
+.site-footer
+    border-color: $gray
+    background-color: $gray-lightest
+    background-image: linear-gradient(to bottom, $gray-lighter 0%, $gray-lightest 5%)
+    color: $grayblue
+    &-content-wrapper
+        +display(flex)
+        flex-wrap: wrap
+        width: 100%
+    &-item
+        &-left
+            width: 100%
+            text-align: center
+            +media($medium-screen)
+                width: 25%
+                text-align: left
+        &-center
+            +padding(10px 0 0 0)
+            width: 100%
+            text-align: center
+            +media($medium-screen)
+                +padding(4px 0 0 0)
+                width: 75%
+                text-align: right
+            +media($large-screen)
+                width: 50%
+                text-align: center
+        &-right
+            +display(inline-block)
+            +padding(10px 0 0 0)
+            width: 100%
+            text-align: center
+            +media($medium-screen)
+                text-align: right
+            +media($large-screen)
+                +padding(4px 0 0 0)
+                width: 25%
+    &-contact-item
+        +display(inline-block)
+    &-link
+        color: $grayblue-lighter
+        font-weight: 600
+        &:hover
+            color: $grayblue-darkest

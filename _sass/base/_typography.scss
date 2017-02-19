@@ -1,10 +1,8 @@
 body {
   color: $base-font-color;
   font-family: $base-font-family;
-  font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 400;
 }
 
 h1,
@@ -14,11 +12,9 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
+  font-size: modular-scale(1);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
-  color: $base-header-color;
-  font-weight: 400;
 }
 
 p {
@@ -33,7 +29,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: $base-link-hover;
+    color: shade($action-color, 25%);
   }
 }
 
@@ -43,10 +39,4 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
-}
-
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
 }

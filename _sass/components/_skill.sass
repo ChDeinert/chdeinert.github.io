@@ -1,0 +1,53 @@
+.skill-wrapper
+    +display(flex)
+    +justify-content(flex-start)
+    +flex-direction(row)
+    +flex-wrap(wrap)
+    margin-bottom: 30px
+    +media($medium-screen)
+        +justify-content(center)
+
+.skill
+    +padding(0 30px)
+    +margin(2px)
+    +border-top-radius(3px)
+    +border-bottom-radius(3px)
+    +display(flex)
+    +flex-direction(row)
+    +flex-wrap(no-wrap)
+    +align-items(center)
+    +justify-content(space-around)
+    +transition(color 0.3s ease-in-out, padding-top 0.3s ease-in-out 0.3s)
+    width: 100%
+    text-align: left
+    border: 1px solid $grayblue-lighter
+    +media($medium-screen)
+        +padding(30px)
+        +flex-direction(column)
+        +justify-content(center)
+        width: 210px
+        &:hover
+            padding-top: 10px
+            .skill-tooltip
+                opacity: 1
+                filter: alpha(opacity=1)
+    &-icon
+        font-size: 45px
+        +media($medium-screen)
+            font-size: 60px
+    &-level
+        width: 200px
+        text-align: right
+        +media($medium-screen)
+            text-align: center
+            margin-top: 0
+    &-tooltip
+        +display(block)
+        +transition(opacity 0.3s ease-in-out 0.3s)
+        text-align: right
+        +media($medium-screen)
+            width: 200px
+            position: absolute
+            text-align: center
+            opacity: 0
+            filter: alpha(opacity=0)
