@@ -32,19 +32,22 @@
                 opacity: 1
                 filter: alpha(opacity=1)
     &-icon
-        font-size: 60px
-    &-level
-        margin-top: -20px
-        width: 200px
-        text-align: center
+        font-size: 45px
         +media($medium-screen)
+            font-size: 60px
+    &-level
+        width: 200px
+        text-align: right
+        +media($medium-screen)
+            text-align: center
             margin-top: 0
     &-tooltip
         +display(block)
         +transition(opacity 0.3s ease-in-out 0.3s)
-        position: absolute
-        width: 200px
-        text-align: center
+        text-align: right
         +media($medium-screen)
+            width: 200px
+            position: absolute
+            text-align: center
             opacity: 0
             filter: alpha(opacity=0)
