@@ -47,6 +47,44 @@
             font-size: 1.5rem
         h4, h5, h6
             font-size: 1em
+        a
+            +transition(color 0.3s)
+            +perspective(600px)
+            +perspective-origin(50% 100%)
+            position: relative
+            display: inline-block
+            outline: none
+            color: $grayblue-darkest
+            vertical-align: bottom
+            text-decoration: none
+            white-space: nowrap
+            font-weight: 400
+            &:hover, &:focus
+                color: $orange
+            &::before, &::after
+                +padding(0 4px)
+                +backface-visibility(hidden)
+                pointer-events: none
+                -webkit-font-smoothing: antialiased
+                font-smoothing: antialiased
+                position: absolute
+                top: 0
+                left: -4px
+                z-index: -1
+                box-sizing: content-box
+                width: 100%
+                height: 100%
+                content: ''
+            &::before
+                +transition(transform 0.2s)
+                +transition-timing-function(cubic-bezier(0.7,0,0.3,1))
+                +transform(rotateX(90deg))
+                +transform-origin(50% 100%)
+                background-color: $grayblue
+            &:hover::before, &:focus::before
+                +transform(rotateX(0deg))
+            &::after
+                border-bottom: 2px solid $grayblue
     &-footer
         margin-top: 30px
         position: absolute
