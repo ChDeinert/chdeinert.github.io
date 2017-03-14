@@ -1,15 +1,42 @@
 a
     color: $orange-lighter
     +transition(color 0.3s ease-in-out)
-    &:hover
+    &:hover,
+    &:focus
         color: $orange
 
 .button
     +padding(6px 9px)
-    border: 1px solid $orange-lighter
+    +transition(background-color 0.3s, color 0.3s)
+    color: $light-gray
+    background: $grayblue-lighter
     border-radius: 3px
-    &:hover
-        border-color: $orange
+    position: relative
+    &:focus
+        outline: none
+    &::before
+        +transition(transform 0.3s, opacity 0.3s)
+        +transition-timing-function(cubic-bezier(0.75, 0, 0.125, 1))
+        +transform(scale3d(0.6, 0.6, 1))
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: 2px solid $grayblue
+        z-index: -1
+        border-radius: inherit
+        opacity: 0
+    &:hover,
+    &:focus
+        background-color: #fff
+        color: $grayblue
+    &:hover::before,
+    &:focus::before
+        +transform(scale3d(1, 1, 1))
+        opacity: 1
+        z-index: 1
 
 hr
     border-color: $gray-lightest
