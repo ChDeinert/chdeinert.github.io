@@ -3,75 +3,52 @@ layout: default
 permalink: /resume
 ---
 
-<section class="content-section">
-    <div class="content-wrapper">
-        <header>
-            <h1>Working Experience</h1>
-        </header>
-        <div>
-            <ul class="timeline">
-                {% for job in site.data.informations.work-history %}
-                <li class="timeline-entry">
-                    <div class="timeline-entry-icon"></div>
-                    <div class="timeline-entry-content">
-                        <p class="timeline-entry-content-time">{{ job.time-from }} - {{ job.time-to }}</p>
-                        <h2>{{ job.company }}</h2>
-                        <p class="timeline-entry-content-details">{{ job.job }}</p>
-                        {% if job.description != '' %}
-                        <div class="timeline-entry-content-info">{{ job.description }}</div>
-                        {% endif %}
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+<h1 class="visually-hidden">
+  Resume
+</h1>
+
+<section class="timeline">
+  <header>
+    <h2>Working Experience</h2>
+  </header>
+  <ul>
+    {% for job in site.data.informations.work-history %}
+      <li>
+        <span>{{ job.time-from }} - {{ job.time-to }}</span>
+        <h3>{{ job.job }}</h3>
+        <p>{{ job.company }}</p>
+        {% if job.description != '' %}
+          <ul class="timeline__item__description">
+            {% for item in job.description %}
+              <li>
+                {{ item }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </section>
 
-<section class="content-section content-section-orange">
-    <div class="content-wrapper">
-        <header>
-            <h1>Education</h1>
-        </header>
-        <div>
-            <ul class="timeline">
-                {% for degree in site.data.informations.education %}
-                <li class="timeline-entry">
-                    <div class="timeline-entry-icon"></div>
-                    <div class="timeline-entry-content">
-                        <p class="timeline-entry-content-time">{{ degree.time-from }} - {{ degree.time-to }}</p>
-                        <h2>{{ degree.school }}</h2>
-                        <p class="timeline-entry-content-details">{{ degree.degree }}</p>
-                        {% if degree.description != '' %}
-                        <div class="timeline-entry-content-info">{{ degree.description }}</div>
-                        {% endif %}
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</section>
+<hr />
 
-<section class="content-section content-section-grayblue">
-    <div class="content-wrapper">
-        <header>
-            <h1>Certificates</h1>
-        </header>
-        <div>
-            <ul class="timeline">
-                {% for cert in site.data.informations.certificates %}
-                <li class="timeline-entry">
-                    <div class="timeline-entry-icon"></div>
-                    <div class="timeline-entry-content">
-                        <p class="timeline-entry-content-time">{{ cert.date }}</p>
-                        <h2>{{ cert.type }}</h2>
-                        <p class="timeline-entry-content-details">{{ cert.title }}</p>
-                        <p class="timeline-entry-content-info">{{ cert.organisation }}</p>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+<section class="timeline">
+  <header>
+    <h2>Education</h2>
+  </header>
+  <ul>
+    {% for degree in site.data.informations.education %}
+      <li>
+        <span>{{ degree.time-from }} - {{ degree.time-to }}</span>
+        <h3>{{ degree.degree }}</h3>
+        <p>{{ degree.school }}</p>
+        {% if degree.description != '' %}
+          <ul class="timeline__item__description">
+            <li>{{ degree.description }}</li>
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </section>

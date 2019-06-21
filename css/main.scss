@@ -1,86 +1,41 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
 @charset "utf-8";
 
+$font-base: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-secondary: "PT Serif", serif;
+$font-monospace: "Ubuntu Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$vertical-rythm-small: 1.375rem;
+$vertical-rythm-medium: 1.5rem;
+
 // Color-Variables
-$light-gray: #DDDDDD;
-$dark-gray: #333333;
+$white: rgb(255,255,255);
+$blue-dark: rgb(0, 18, 24);
+$blue-middark: rgb(1, 34, 45);
+$blue-base: rgb(21, 79, 98);
+$blue-midlight: rgb(70, 125, 143);
+$blue-light: rgb(168, 201, 212);
+$orange-base: rgb(157, 94, 29);
+$orange-light: rgb(189, 124, 59);
 
-$gray-lightest: #E5E4E4;
-$gray-lighter: #B4B3B3;
-$gray: #888888;
-$gray-darker: #585858;
-$gray-darkest: #181818;
-
-$grayblue-lightest: #6A7A83;
-$grayblue-lighter: #4D5F68;
-$grayblue: #36464f;
-$grayblue-darker: #1F3038;
-$grayblue-darkest: #132732;
-
-$orange-lightest: #FFC164;
-$orange-lighter: #FFB039;
-$orange: #FF9800;
-$orange-darker: #C67600;
-$orange-darkest: #9B5D00;
-
-/// A variable that outputs a system font stack.
-///
-/// @link https://goo.gl/LHRZIf
-///
-/// @type list
-///
-/// @example scss
-///   .element {
-///     font-family: $font-stack-system;
-///   }
-///
-///   // CSS Output
-///   .element {
-///     font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-///   }
-
-$font-stack-system: (
-  -apple-system,
-  BlinkMacSystemFont,
-  "Avenir Next",
-  "Avenir",
-  "Segoe UI",
-  "Lucida Grande",
-  "Helvetica Neue",
-  "Helvetica",
-  "Fira Sans",
-  "Roboto",
-  "Noto",
-  "Droid Sans",
-  "Cantarell",
-  "Oxygen",
-  "Ubuntu",
-  "Franklin Gothic Medium",
-  "Century Gothic",
-  "Liberation Sans",
-  sans-serif,
-);
-
-body, * {
-    padding: 0;
-    margin: 0;
-}
+// Breakpoints
+$media-breakpoint-medium: 700px;
+$media-breakpoint-big: 990px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-    "bourbon/bourbon",
-    "base/base",
-    "neat/neat",
-    "layout",
-    "style",
-    "highlight",
-    "components/site-header",
-    "components/site-footer",
-    "components/hero",
-    "components/content",
-    "components/skill",
-    "components/timeline",
-    "components/blog"
+  "style",
+  "typography",
+  "links",
+  "lists",
+  "layout",
+  "header",
+  "footer",
+  "sections"
 ;

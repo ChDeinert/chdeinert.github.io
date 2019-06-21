@@ -1,30 +1,6 @@
-body
-    height: 100%
-    min-height: 100vh
-
-.site-header
-    min-height: 44px
-    max-height: 44px
-    border-top: 4px solid
-
-main
-    +margin(0)
-    +padding(0)
-    min-height: 80vh
-
-.content
-    &-section
-        +margin(0)
-        +padding(0)
-    &-wrapper
-        +margin(0 auto)
-        +padding(120px 30px)
-        max-width: 720px
-        text-align: left
-        +media($medium-screen)
-            text-align: center
-
-.site-footer
-    +margin(0)
-    +padding(30px)
-    border-top: 1px solid
+.page-wrapper
+  width: 100%
+  max-width: 1680px
+  margin: 0 auto
+  background-color: $white
+  box-shadow: 0 0 .5rem change-color($blue-base, $alpha: .2)

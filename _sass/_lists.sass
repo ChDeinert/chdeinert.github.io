@@ -1,0 +1,18 @@
+ul, ol
+  margin-top: $vertical-rythm-small
+  margin-bottom: $vertical-rythm-small
+  padding-left: 1.5rem
+  list-style-position: inside
+  @media (min-width: $media-breakpoint-medium)
+    margin-top: $vertical-rythm-medium
+    margin-bottom: $vertical-rythm-medium
+  ul, ol
+    margin-top: 0
+    margin-bottom: 0
+ol
+  list-style: none
+  counter-reset: list-counter
+  li
+    counter-increment: list-counter
+    &:before
+      content: counter(list-counter) ". "

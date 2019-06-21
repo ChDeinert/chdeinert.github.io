@@ -1,0 +1,55 @@
+.footer
+  margin-top: $vertical-rythm-small * 3
+  padding: $vertical-rythm-small 1rem
+  background-color: $blue-middark
+  color: $blue-light
+  @media (min-width: $media-breakpoint-medium)
+    margin-top: $vertical-rythm-medium * 4
+    padding: $vertical-rythm-medium 1rem
+  a
+    color: $blue-midlight
+    text-shadow: none
+    line-height: $vertical-rythm-small
+    @media (min-width: $media-breakpoint-medium)
+      line-height: $vertical-rythm-medium
+    &:hover, &:focus
+      color: $orange-light
+    &:focus:before
+      top: 0
+      border-color: change-color($orange-light, $alpha: .4)
+    &:after
+      background-color: transparent
+  &__social
+    margin-bottom: $vertical-rythm-small * 2
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    height: $vertical-rythm-small * 2
+    @media (min-width: $media-breakpoint-medium)
+      margin-bottom: $vertical-rythm-medium * 2
+      height: $vertical-rythm-medium * 2
+    & > a
+      margin-right: 1rem
+      &:focus:before
+        top: -6px
+        left: -6px
+        height: 44px
+        width: calc(100% + 12px)
+    & > a:last-child
+      margin-right: 0
+  &__meta
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    & > *
+      margin-bottom: $vertical-rythm-small
+      @media (min-width: $media-breakpoint-medium)
+        margin-bottom: $vertical-rythm-medium
+    &--copyright
+      margin-top: $vertical-rythm-small
+      margin-bottom: 0
+      font-size: .769rem
+      @media (min-width: $media-breakpoint-medium)
+        margin-top: $vertical-rythm-medium

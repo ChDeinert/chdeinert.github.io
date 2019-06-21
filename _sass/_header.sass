@@ -1,0 +1,58 @@
+.header
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+  padding-left: 1rem
+  padding-right: 1rem
+  margin-bottom: -2px
+  border-bottom: 2px solid change-color($blue-base, $alpha: .1)
+  @media (min-width: $media-breakpoint-big)
+    align-items: center
+    padding-left: 2rem
+    padding-right: 2rem
+  &__navigation
+    float: right
+    &:after
+      clear: both
+  a, a:visited
+    color: $blue-dark
+    margin-right: .5rem
+    &:last-child
+      margin-right: 0
+    &:after
+      width: 0
+    &:hover, &:focus
+      color: $orange-base
+      text-decoration: none
+    &:hover:after, &:focus:after
+      width: calc(100% + 4px)
+      background-color: $blue-dark
+    @media (min-width: $media-breakpoint-medium)
+      margin-right: 1rem
+  &__logo
+    font-size: 1.3125rem
+    line-height: $vertical-rythm-small
+    padding-top: $vertical-rythm-small
+    padding-bottom: $vertical-rythm-small
+    @media (min-width: $media-breakpoint-medium)
+      font-size: 1.2777778rem
+      line-height: $vertical-rythm-medium
+      padding-top: $vertical-rythm-medium
+      padding-bottom: $vertical-rythm-medium
+    @media (min-width: $media-breakpoint-big)
+      padding-top: $vertical-rythm-medium / 2
+      padding-bottom: $vertical-rythm-medium / 2
+    &:after
+      display: none
+    &:focus:before
+      top: $vertical-rythm-small / 2
+      left: -($vertical-rythm-small / 2)
+      height: $vertical-rythm-small * 2
+      width: calc(100% + #{$vertical-rythm-small})
+      @media (min-width: $media-breakpoint-medium)
+        top: $vertical-rythm-medium / 2
+        left: -($vertical-rythm-medium / 2)
+        height: $vertical-rythm-medium * 2
+        width: calc(100% + #{$vertical-rythm-medium})
+      @media (min-width: $media-breakpoint-big)
+        top: 0

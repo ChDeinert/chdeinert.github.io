@@ -1,18 +1,11 @@
-<header class="site-header">
-    <nav>
-        <div class="site-header-logo">ChDeinert</div>
-        <ul class="site-header-menulist" id="menulist">
-            <li class="site-header-menuitem"><a href="{{ site.baseurl }}/">Home</a></li>
-            {% for page in site.links %}
-              {% if page.title %}
-                  <li class="site-header-menuitem">
-                      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                  </li>
-              {% endif %}
-            {% endfor %}
-        </ul>
-        <div class="site-header-menuicon" id="menuicon">
-            <span></span>
-        </div>
-    </nav>
+<header class="header">
+  <a href="/" class="header__logo">Barbaric.dev</a>
+  <nav class="header__navigation" role="navigation">
+    <a href="{{ site.baseurl }}/">Home</a>
+    {% for page in site.links %}
+      {% if page.title %}
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
 </header>

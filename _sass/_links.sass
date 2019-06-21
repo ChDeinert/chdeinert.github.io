@@ -1,0 +1,37 @@
+a, a:visited
+  display: inline-block
+  position: relative
+  color: $blue-base
+  text-decoration: none
+  text-shadow: 1px 1px #fff, 1px -1px #fff,  -1px 1px #fff, -1px -1px #fff
+  &:hover, &:focus
+    color: $orange-base
+    text-decoration: none
+    &:after
+      width: calc(100% + 4px)
+      left: -2px
+      background-color: $orange-base
+  &:focus
+    outline: none
+    &:before
+      content: ""
+      position: absolute
+      top: -($vertical-rythm-small / 2)
+      left: -3px
+      height: $vertical-rythm-small
+      width: calc(100% + 6px)
+      border: 2px solid change-color($blue-midlight, $alpha: .2)
+      border-radius: 2px
+      @media (min-width: $media-breakpoint-medium)
+        top: -($vertical-rythm-medium / 2)
+        height: $vertical-rythm-medium
+  &:after
+    content: ""
+    position: absolute
+    top: calc(#{$vertical-rythm-small / 2} - 2px)
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: $blue-base
+    @media (min-width: $media-breakpoint-medium)
+      top: calc(#{$vertical-rythm-medium / 2} - 2px)

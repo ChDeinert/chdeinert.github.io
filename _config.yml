@@ -1,14 +1,11 @@
 # Site settings
-title: Christian Deinert
+title: Barbaric.Dev - Christian Deinert
 email: ChDeinert@gmail.com
 description: >
-  I'm a Web- & Software Developer based in Singen(Hohentwiel) - Germany,
-  working in Front- and Back-End!
+  I'm Christian Deinert, a FrontEnd Web- & Software Developer based in Singen(Hohentwiel) - Germany.
 timezone: Europe/Berlin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ChDeinert.github.io" # the base hostname & protocol for your site
-twitter_username: ChDeinert
-github_username:  ChDeinert
+url: "https://ChDeinert.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -16,19 +13,19 @@ markdown: kramdown
 include:
 - _pages
 
-# Gems
-gems:
-- jemoji
-
 # Site areas
 links:
 - {title: 'Resume', url: '/resume'}
-- {title: 'Imprint', url: '/imprint'}
+
+# Gems
+plugins:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jemoji
 
 # Blog
 excerpt_separator: '---'
 defaults:
 - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:year/:month/:day/:title'}}
-
-# Google Services
-google_analytics: UA-89954996-1

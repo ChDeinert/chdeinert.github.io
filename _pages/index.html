@@ -4,51 +4,19 @@ permalink: /
 ---
 
 <section class="hero">
-    <div class="hero-content-wrapper">
-        <div class="hero-content">
-            <p class="hero-content-top">Hi! I'm</p>
-            <h1 class="hero-content-header">Christian Deinert</h1>
-            <p class="hero-content-bottom">Web- &amp; Software Developer from <a href="https://www.google.de/maps/place/Singen+(Hohentwiel)/@47.7568506,8.7973657,12z/data=!3m1!4b1!4m2!3m1!1s0x479a7d33fa8afe9f:0xa3f9f94099cb2cef" target="_blank" class="hero-link"><i class="fa fa-map-marker hero-link-icon"></i> Singen Htwl.</a></p>
-        </div>
-    </div>
-    <div class="hero-bg"></div>
+  <h1>Hi! I'm Christian&nbsp;Deinert</h1>
+  <p>FrontEnd Web- &amp; Software Developer from <a href="https://www.google.de/maps/place/Singen+(Hohentwiel)/@47.7568506,8.7973657,12z/data=!3m1!4b1!4m2!3m1!1s0x479a7d33fa8afe9f:0xa3f9f94099cb2cef" target="_blank" class="link--external">Singen Htwl</a>.</p>
 </section>
 
-<section class="content-section">
-    <div class="content-wrapper">
-        <header>
-            <h1>About</h1>
-        </header>
-        <div>
-            <p>I used to focus on Backend Development with PHP, but now I'm also getting my hands dirty in the Front-End! Sometimes I also try myself on designing.</p>
-            <p>Also I'm playing Handball, PC Games, I like to go mountain biking, am an amateur photographer and a fan of sciency things.</p>
-        </div>
-    </div>
-</section>
+<hr>
 
-<section class="content-section content-section-grayblue">
-    <div class="content-wrapper">
-        <header>
-            <h1>What I can work with</h1>
-        </header>
-        <div class="skill-wrapper">
-            {% for skill in site.data.informations.skills %}
-            <div class="skill">
-                <span class="skill-icon"><i class="{{ skill.icon }}" title="{{ skill.name }}"></i></span>
-                <span class="skill-level">
-                    {% for i in (1..5) %}
-                    {% if i <= skill.level %}
-                    <i class="fa fa-circle"></i>
-                    {% else %}
-                    <i class="fa fa-circle-thin"></i>
-                    {% endif %}
-                    {% endfor %}
-                    <span class="skill-tooltip">{{ skill.description }}</span>
-                </span>
-            </div>
-            {% endfor %}
-        </div>
-
-        <p>And I love to learn new things and to improve myself!</p>
-    </div>
+<section>
+  <header>
+    <h2>About me</h2>
+  </header>
+  <div>
+    <p>I'm a FrontEnd Software Developer mainly using Node.js, React and Sass.<br />I constantly learn new stuff and I love to take a look beyond the tellerrand now and then.</p>
+    <p>Before I started my specialization towards the FrontEnd, was working close to 10 years as an 'Informatikkaufmann' (IT Management Assistant is the official translation I think) doing FullStack Development with PHP (60-70% of my time) while also doing IT-Administration and Support.<br />During that time I also made my B.Sc. in Applied Computer Science in my free time...<br />Shortly after I finished my Bachelor went on and found the position I'm currently in (may 2016).</p>
+    <p>Also I'm playing Handball, PC Games and am an amateur photographer.</p>
+  </div>
 </section>
