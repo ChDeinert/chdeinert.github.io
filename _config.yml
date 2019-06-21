@@ -5,7 +5,7 @@ description: >
   I'm Christian Deinert, a FrontEnd Web- & Software Developer based in Singen(Hohentwiel) - Germany.
 timezone: Europe/Berlin
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://ChDeinert.github.io" # the base hostname & protocol for your site
+url: "https://www.barbaric.dev" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
