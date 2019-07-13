@@ -4,6 +4,7 @@ a, a:visited
   color: $blue-base
   text-decoration: none
   text-shadow: 1px 1px #fff, 1px -1px #fff,  -1px 1px #fff, -1px -1px #fff
+  transition: color 50ms linear
   &:hover, &:focus
     color: $orange-base
     text-decoration: none
@@ -33,5 +34,6 @@ a, a:visited
     width: 100%
     height: 2px
     background-color: $blue-base
+    transition: width 100ms ease-in, left 100ms ease-in, background-color 50ms linear
     @media (min-width: $media-breakpoint-medium)
       top: calc(#{$vertical-rythm-medium / 2} - 2px)
