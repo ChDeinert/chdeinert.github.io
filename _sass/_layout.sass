@@ -4,3 +4,15 @@
   margin: 0 auto
   background-color: $white
   box-shadow: 0 0 .5rem change-color($blue-base, $alpha: .2)
+
+.vertical-grid
+  display: none
+  position: absolute
+  top: 0px
+  right: 0px
+  left: 0px
+  pointer-events: none
+  user-select: none
+  background: linear-gradient(change-color($orange-base, $alpha: .2) 1px, transparent 1px) left top / $vertical-rythm-small $vertical-rythm-small
+  @media (min-width: $media-breakpoint-medium)
+    background: linear-gradient(change-color($orange-base, $alpha: .2) 1px, transparent 1px) left top / $vertical-rythm-medium $vertical-rythm-medium

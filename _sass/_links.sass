@@ -1,9 +1,10 @@
 a, a:visited
+  z-index: 1
   display: inline-block
   position: relative
   color: $blue-base
   text-decoration: none
-  text-shadow: 1px 1px #fff, 1px -1px #fff,  -1px 1px #fff, -1px -1px #fff
+  text-shadow: 1px 1px $white, 1px -1px $white,  -1px 1px $white, -1px -1px $white
   transition: color 50ms linear
   &:hover, &:focus
     color: $orange-base
@@ -27,6 +28,7 @@ a, a:visited
         top: -($vertical-rythm-medium / 2)
         height: $vertical-rythm-medium
   &:after
+    z-index: -1
     content: ""
     position: absolute
     top: calc(#{$vertical-rythm-small / 2} - 2px)

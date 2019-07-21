@@ -8,18 +8,22 @@
     padding: $vertical-rythm-medium 1rem
   a
     color: $blue-midlight
-    text-shadow: none
+    text-shadow: 1px 1px $blue-middark, 1px -1px $blue-middark,  -1px 1px $blue-middark, -1px -1px $blue-middark
     line-height: $vertical-rythm-small
     transition: color 50ms linear
+    &:after
+      top: inherit
+      background-color: $blue-midlight
+      bottom: 0
     @media (min-width: $media-breakpoint-medium)
       line-height: $vertical-rythm-medium
     &:hover, &:focus
       color: $orange-light
+      &:after
+        background-color: $orange-light
     &:focus:before
       top: 0
       border-color: change-color($orange-light, $alpha: .4)
-    &:after
-      background-color: transparent
   &__social
     margin-bottom: $vertical-rythm-small * 2
     display: flex
@@ -32,6 +36,8 @@
       height: $vertical-rythm-medium * 2
     & > a
       margin-right: 1rem
+      &:after, &:hover::after, &:focus::after
+        background-color: transparent
       &:focus:before
         top: -6px
         left: -6px
