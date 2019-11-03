@@ -1,11 +1,13 @@
-<header class="header">
-  <a href="/" class="header__logo">Barbaric.dev</a>
-  <nav class="header__navigation" role="navigation">
-    <a href="{{ site.baseurl }}/">Home</a>
-    {% for page in site.links %}
-      {% if page.title %}
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
-  </nav>
-</header>
+<div class="header__wrapper">
+  <header class="header layout-util--wrapper-width">
+    <a href="/" class="header__logo">Barbaric.dev</a>
+    <nav class="header__navigation" role="navigation">
+      <a href="{{ site.baseurl }}/">Home</a>
+      {% for page in site.links %}
+        {% if page.title %}
+          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </header>
+</div>

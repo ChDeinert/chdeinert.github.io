@@ -1,9 +1,5 @@
 .page-wrapper
-  width: 100%
-  max-width: 1680px
-  margin: 0 auto
   background-color: $white
-  box-shadow: 0 0 .5rem change-color($blue-base, $alpha: .2)
 
 .vertical-grid
   display: none
@@ -16,3 +12,19 @@
   background: linear-gradient(change-color($orange-base, $alpha: .2) 1px, transparent 1px) left top / $vertical-rythm-small $vertical-rythm-small
   @media (min-width: $media-breakpoint-medium)
     background: linear-gradient(change-color($orange-base, $alpha: .2) 1px, transparent 1px) left top / $vertical-rythm-medium $vertical-rythm-medium
+
+.layout-util
+  &--wrapper-width
+    width: 100%
+    max-width: 1680px
+    margin: 0 auto
+
+  &--content-width
+    width: 100%
+    margin: 0 auto
+    padding-bottom: $vertical-rythm-small
+    @media (min-width: $media-breakpoint-medium)
+      max-width: 720px
+      padding-left: 0
+      padding-right: 0
+      padding-bottom: $vertical-rythm-medium

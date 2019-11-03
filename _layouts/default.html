@@ -4,13 +4,13 @@
   {% include head.html %}
 
   <body>
-    <div class="page-wrapper">
-      {% include header.html %}
-      <main>
+    {% include header.html %}
+    <div class="page-wrapper layout-util--wrapper-width">
+      <main class="layout-util--content-width">
         {{ content }}
       </main>
-      {% include footer.html %}
     </div>
+    {% include footer.html %}
     <div class="vertical-grid" style="height: 400%;"></div>
   </body>
 
