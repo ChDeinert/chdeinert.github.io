@@ -12,14 +12,16 @@ skills:
 work-history:
 - {
     time-from: '05.2016',
-    time-to: 'Now',
+    time-to: '07.2021',
     job: 'Software Developer',
     company: 'coliquio GmbH',
     description: [
-      'Definition &amp; development of Frontend applications with JavaScript (Node.js, express.js, React.js with and without Redux)',
-      'Definition &amp; development of universal Webcomponents with JavaScript',
-      'Development of responsive web-UIs according to UI- / UX-Concepts with HTML5, CSS3, SCSS, JavaScript',
-      'Support of the planning, definition &amp; development of Microservices',
+      'Definition &amp; development of Front-end applications with JavaScript &amp; Typescript (Node.js, express.js, React.js with and without Redux, Next.js)',
+      'Planning, definition &amp; implementation of the Front-end architecture',
+      'Definition &amp; development of universal Web components with JavaScript',
+      'Development of responsive web-UIs according to UI- / UX-Concepts with HTML5, CSS3, SCSS, styled-components &amp; JavaScript',
+      'Consulting &amp; supporting internal Stakeholders, Designers and Productmanagament regarding product and feature planning, maintenance and development',
+      'Support of the planning, definition &amp; development of Micro services',
       'Support of the planning &amp; development of an authentication concept using OpenID Connect',
       'Contact person for interns in the engineering department'
     ]
