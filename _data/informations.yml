@@ -11,6 +11,13 @@ skills:
 
 work-history:
 - {
+    time-from: '08.2021',
+    time-to: 'now',
+    job: 'Frontend Developer',
+    company: 'Testo SE & Co. KGaA',
+    description: ''
+}
+- {
     time-from: '05.2016',
     time-to: '07.2021',
     job: 'Software Developer',
